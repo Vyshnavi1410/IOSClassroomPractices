@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A80EB601299BDCCC004D83ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80EB600299BDCCC004D83ED /* AppDelegate.swift */; };
+		A80EB603299BDCCC004D83ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80EB602299BDCCC004D83ED /* SceneDelegate.swift */; };
+		A80EB605299BDCCC004D83ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80EB604299BDCCC004D83ED /* ViewController.swift */; };
+		A80EB608299BDCCC004D83ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80EB606299BDCCC004D83ED /* Main.storyboard */; };
+		A80EB60A299BDCCE004D83ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80EB609299BDCCE004D83ED /* Assets.xcassets */; };
+		A80EB60D299BDCCE004D83ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80EB60B299BDCCE004D83ED /* LaunchScreen.storyboard */; };
+		A80EB618299BDCCE004D83ED /* Kattamuri_CalculatorAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80EB617299BDCCE004D83ED /* Kattamuri_CalculatorAppTests.swift */; };
+		A80EB622299BDCCE004D83ED /* Kattamuri_CalculatorAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80EB621299BDCCE004D83ED /* Kattamuri_CalculatorAppUITests.swift */; };
+		A80EB624299BDCCE004D83ED /* Kattamuri_CalculatorAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80EB623299BDCCE004D83ED /* Kattamuri_CalculatorAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A80EB614299BDCCE004D83ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A80EB5F5299BDCCC004D83ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A80EB5FC299BDCCC004D83ED;
+			remoteInfo = Kattamuri_CalculatorApp;
+		};
+		A80EB61E299BDCCE004D83ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A80EB5F5299BDCCC004D83ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A80EB5FC299BDCCC004D83ED;
+			remoteInfo = Kattamuri_CalculatorApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A80EB5FD299BDCCC004D83ED /* Kattamuri_CalculatorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kattamuri_CalculatorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80EB600299BDCCC004D83ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A80EB602299BDCCC004D83ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A80EB604299BDCCC004D83ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A80EB607299BDCCC004D83ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A80EB609299BDCCE004D83ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A80EB60C299BDCCE004D83ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A80EB60E299BDCCE004D83ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A80EB613299BDCCE004D83ED /* Kattamuri_CalculatorAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kattamuri_CalculatorAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80EB617299BDCCE004D83ED /* Kattamuri_CalculatorAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kattamuri_CalculatorAppTests.swift; sourceTree = "<group>"; };
+		A80EB61D299BDCCE004D83ED /* Kattamuri_CalculatorAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kattamuri_CalculatorAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80EB621299BDCCE004D83ED /* Kattamuri_CalculatorAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kattamuri_CalculatorAppUITests.swift; sourceTree = "<group>"; };
+		A80EB623299BDCCE004D83ED /* Kattamuri_CalculatorAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kattamuri_CalculatorAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A80EB5FA299BDCCC004D83ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80EB610299BDCCE004D83ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80EB61A299BDCCE004D83ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A80EB5F4299BDCCC004D83ED = {
+			isa = PBXGroup;
+			children = (
+				A80EB5FF299BDCCC004D83ED /* Kattamuri_CalculatorApp */,
+				A80EB616299BDCCE004D83ED /* Kattamuri_CalculatorAppTests */,
+				A80EB620299BDCCE004D83ED /* Kattamuri_CalculatorAppUITests */,
+				A80EB5FE299BDCCC004D83ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A80EB5FE299BDCCC004D83ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A80EB5FD299BDCCC004D83ED /* Kattamuri_CalculatorApp.app */,
+				A80EB613299BDCCE004D83ED /* Kattamuri_CalculatorAppTests.xctest */,
+				A80EB61D299BDCCE004D83ED /* Kattamuri_CalculatorAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A80EB5FF299BDCCC004D83ED /* Kattamuri_CalculatorApp */ = {
+			isa = PBXGroup;
+			children = (
+				A80EB600299BDCCC004D83ED /* AppDelegate.swift */,
+				A80EB602299BDCCC004D83ED /* SceneDelegate.swift */,
+				A80EB604299BDCCC004D83ED /* ViewController.swift */,
+				A80EB606299BDCCC004D83ED /* Main.storyboard */,
+				A80EB609299BDCCE004D83ED /* Assets.xcassets */,
+				A80EB60B299BDCCE004D83ED /* LaunchScreen.storyboard */,
+				A80EB60E299BDCCE004D83ED /* Info.plist */,
+			);
+			path = Kattamuri_CalculatorApp;
+			sourceTree = "<group>";
+		};
+		A80EB616299BDCCE004D83ED /* Kattamuri_CalculatorAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A80EB617299BDCCE004D83ED /* Kattamuri_CalculatorAppTests.swift */,
+			);
+			path = Kattamuri_CalculatorAppTests;
+			sourceTree = "<group>";
+		};
+		A80EB620299BDCCE004D83ED /* Kattamuri_CalculatorAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A80EB621299BDCCE004D83ED /* Kattamuri_CalculatorAppUITests.swift */,
+				A80EB623299BDCCE004D83ED /* Kattamuri_CalculatorAppUITestsLaunchTests.swift */,
+			);
+			path = Kattamuri_CalculatorAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A80EB5FC299BDCCC004D83ED /* Kattamuri_CalculatorApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80EB627299BDCCE004D83ED /* Build configuration list for PBXNativeTarget "Kattamuri_CalculatorApp" */;
+			buildPhases = (
+				A80EB5F9299BDCCC004D83ED /* Sources */,
+				A80EB5FA299BDCCC004D83ED /* Frameworks */,
+				A80EB5FB299BDCCC004D83ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kattamuri_CalculatorApp;
+			productName = Kattamuri_CalculatorApp;
+			productReference = A80EB5FD299BDCCC004D83ED /* Kattamuri_CalculatorApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A80EB612299BDCCE004D83ED /* Kattamuri_CalculatorAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80EB62A299BDCCE004D83ED /* Build configuration list for PBXNativeTarget "Kattamuri_CalculatorAppTests" */;
+			buildPhases = (
+				A80EB60F299BDCCE004D83ED /* Sources */,
+				A80EB610299BDCCE004D83ED /* Frameworks */,
+				A80EB611299BDCCE004D83ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A80EB615299BDCCE004D83ED /* PBXTargetDependency */,
+			);
+			name = Kattamuri_CalculatorAppTests;
+			productName = Kattamuri_CalculatorAppTests;
+			productReference = A80EB613299BDCCE004D83ED /* Kattamuri_CalculatorAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A80EB61C299BDCCE004D83ED /* Kattamuri_CalculatorAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80EB62D299BDCCE004D83ED /* Build configuration list for PBXNativeTarget "Kattamuri_CalculatorAppUITests" */;
+			buildPhases = (
+				A80EB619299BDCCE004D83ED /* Sources */,
+				A80EB61A299BDCCE004D83ED /* Frameworks */,
+				A80EB61B299BDCCE004D83ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A80EB61F299BDCCE004D83ED /* PBXTargetDependency */,
+			);
+			name = Kattamuri_CalculatorAppUITests;
+			productName = Kattamuri_CalculatorAppUITests;
+			productReference = A80EB61D299BDCCE004D83ED /* Kattamuri_CalculatorAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A80EB5F5299BDCCC004D83ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					A80EB5FC299BDCCC004D83ED = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					A80EB612299BDCCE004D83ED = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = A80EB5FC299BDCCC004D83ED;
+					};
+					A80EB61C299BDCCE004D83ED = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = A80EB5FC299BDCCC004D83ED;
+					};
+				};
+			};
+			buildConfigurationList = A80EB5F8299BDCCC004D83ED /* Build configuration list for PBXProject "Kattamuri_CalculatorApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A80EB5F4299BDCCC004D83ED;
+			productRefGroup = A80EB5FE299BDCCC004D83ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A80EB5FC299BDCCC004D83ED /* Kattamuri_CalculatorApp */,
+				A80EB612299BDCCE004D83ED /* Kattamuri_CalculatorAppTests */,
+				A80EB61C299BDCCE004D83ED /* Kattamuri_CalculatorAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A80EB5FB299BDCCC004D83ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80EB60D299BDCCE004D83ED /* LaunchScreen.storyboard in Resources */,
+				A80EB60A299BDCCE004D83ED /* Assets.xcassets in Resources */,
+				A80EB608299BDCCC004D83ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80EB611299BDCCE004D83ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80EB61B299BDCCE004D83ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A80EB5F9299BDCCC004D83ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80EB605299BDCCC004D83ED /* ViewController.swift in Sources */,
+				A80EB601299BDCCC004D83ED /* AppDelegate.swift in Sources */,
+				A80EB603299BDCCC004D83ED /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80EB60F299BDCCE004D83ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80EB618299BDCCE004D83ED /* Kattamuri_CalculatorAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80EB619299BDCCE004D83ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80EB622299BDCCE004D83ED /* Kattamuri_CalculatorAppUITests.swift in Sources */,
+				A80EB624299BDCCE004D83ED /* Kattamuri_CalculatorAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A80EB615299BDCCE004D83ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A80EB5FC299BDCCC004D83ED /* Kattamuri_CalculatorApp */;
+			targetProxy = A80EB614299BDCCE004D83ED /* PBXContainerItemProxy */;
+		};
+		A80EB61F299BDCCE004D83ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A80EB5FC299BDCCC004D83ED /* Kattamuri_CalculatorApp */;
+			targetProxy = A80EB61E299BDCCE004D83ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A80EB606299BDCCC004D83ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A80EB607299BDCCC004D83ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A80EB60B299BDCCE004D83ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A80EB60C299BDCCE004D83ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A80EB625299BDCCE004D83ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A80EB626299BDCCE004D83ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A80EB628299BDCCE004D83ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kattamuri_CalculatorApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Kattamuri_CalculatorApp;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nwmissouri.edu.Kattamuri-CalculatorApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A80EB629299BDCCE004D83ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kattamuri_CalculatorApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Kattamuri_CalculatorApp;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nwmissouri.edu.Kattamuri-CalculatorApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A80EB62B299BDCCE004D83ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nwmissouri.edu.Kattamuri-CalculatorAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kattamuri_CalculatorApp.app/Kattamuri_CalculatorApp";
+			};
+			name = Debug;
+		};
+		A80EB62C299BDCCE004D83ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nwmissouri.edu.Kattamuri-CalculatorAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kattamuri_CalculatorApp.app/Kattamuri_CalculatorApp";
+			};
+			name = Release;
+		};
+		A80EB62E299BDCCE004D83ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nwmissouri.edu.Kattamuri-CalculatorAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kattamuri_CalculatorApp;
+			};
+			name = Debug;
+		};
+		A80EB62F299BDCCE004D83ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nwmissouri.edu.Kattamuri-CalculatorAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kattamuri_CalculatorApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A80EB5F8299BDCCC004D83ED /* Build configuration list for PBXProject "Kattamuri_CalculatorApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80EB625299BDCCE004D83ED /* Debug */,
+				A80EB626299BDCCE004D83ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80EB627299BDCCE004D83ED /* Build configuration list for PBXNativeTarget "Kattamuri_CalculatorApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80EB628299BDCCE004D83ED /* Debug */,
+				A80EB629299BDCCE004D83ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80EB62A299BDCCE004D83ED /* Build configuration list for PBXNativeTarget "Kattamuri_CalculatorAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80EB62B299BDCCE004D83ED /* Debug */,
+				A80EB62C299BDCCE004D83ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80EB62D299BDCCE004D83ED /* Build configuration list for PBXNativeTarget "Kattamuri_CalculatorAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80EB62E299BDCCE004D83ED /* Debug */,
+				A80EB62F299BDCCE004D83ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A80EB5F5299BDCCC004D83ED /* Project object */;
+}
