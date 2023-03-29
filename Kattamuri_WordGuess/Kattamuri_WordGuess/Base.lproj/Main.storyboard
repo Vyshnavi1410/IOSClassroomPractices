@@ -85,6 +85,9 @@
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Guess a Letter"/>
+                                                        <connections>
+                                                            <action selector="guessLetterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8z1-vW-fC7"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -130,6 +133,9 @@
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="gray" title="Play Again"/>
+                                                        <connections>
+                                                            <action selector="playAgainButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BTy-2q-cC6"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -151,6 +157,17 @@
                             <constraint firstItem="KT2-d0-9a8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nKk-dN-iVX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="displayImage" destination="5Rk-wf-Xi4" id="Cuk-ez-fuj"/>
+                        <outlet property="guessCountLabel" destination="MGn-eN-he6" id="2uL-Ap-yKi"/>
+                        <outlet property="guessLetterField" destination="ccz-QM-QiE" id="EYu-V2-QrO"/>
+                        <outlet property="hintLabel" destination="8qQ-h3-KuW" id="H5c-ME-rXA"/>
+                        <outlet property="statusLabel" destination="JzT-hH-GbL" id="ojP-Nk-8TJ"/>
+                        <outlet property="totalWordsLabel" destination="hC3-LE-1pi" id="kqI-f5-zWO"/>
+                        <outlet property="userGuessLabel" destination="NA3-VN-Zox" id="siL-zu-H9T"/>
+                        <outlet property="wordsGuessedLabel" destination="oyd-Kb-Kjn" id="TUF-gP-iwY"/>
+                        <outlet property="wordsRemainingLabel" destination="FjK-BY-o8x" id="8Po-IO-5bp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
