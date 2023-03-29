@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -50,6 +51,7 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word Guess" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPH-qP-zqg">
                                                         <rect key="frame" x="0.0" y="0.0" width="109" height="23"/>
+                                                        <color key="backgroundColor" name="AccentColor"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                         <color key="textColor" systemColor="systemRedColor"/>
                                                         <nil key="highlightedColor"/>
@@ -86,7 +88,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Guess a Letter"/>
                                                         <connections>
-                                                            <action selector="guessLetterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8z1-vW-fC7"/>
+                                                            <action selector="guessLetterButtonPressed:" destination="BYZ-38-t0r" eventType="editingChanged" id="q7u-bT-Ppg"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -94,13 +96,13 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="tYR-HR-lzy">
-                                        <rect key="frame" x="59.5" y="324.5" width="223.5" height="484"/>
+                                        <rect key="frame" x="11.5" y="324.5" width="319" height="484"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="fbY-Fp-gmD">
-                                                <rect key="frame" x="0.0" y="0.0" width="223.5" height="353"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="319" height="353"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qQ-h3-KuW">
-                                                        <rect key="frame" x="107" y="0.0" width="9.5" height="40"/>
+                                                        <rect key="frame" x="155" y="0.0" width="9.5" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="n7t-yr-8G2"/>
                                                         </constraints>
@@ -109,7 +111,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have made zero Guesess" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGn-eN-he6">
-                                                        <rect key="frame" x="0.0" y="81" width="223.5" height="80"/>
+                                                        <rect key="frame" x="48" y="81" width="223.5" height="80"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="aCL-C7-b76"/>
                                                         </constraints>
@@ -118,7 +120,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a status label of App" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JzT-hH-GbL">
-                                                        <rect key="frame" x="7.5" y="202" width="208.5" height="80"/>
+                                                        <rect key="frame" x="55.5" y="202" width="208.5" height="80"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="XLv-RO-XfB"/>
                                                         </constraints>
@@ -127,7 +129,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIa-sg-Lip">
-                                                        <rect key="frame" x="66" y="323" width="91" height="30"/>
+                                                        <rect key="frame" x="114" y="323" width="91" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="qSy-Tn-5i0"/>
                                                         </constraints>
@@ -139,8 +141,8 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="actor4" translatesAutoresizingMaskIntoConstraints="NO" id="5Rk-wf-Xi4">
-                                                <rect key="frame" x="0.0" y="384" width="223.5" height="100"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Java" translatesAutoresizingMaskIntoConstraints="NO" id="5Rk-wf-Xi4">
+                                                <rect key="frame" x="0.0" y="384" width="319" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="sld-Vh-A78"/>
                                                 </constraints>
@@ -160,10 +162,11 @@
                     <connections>
                         <outlet property="displayImage" destination="5Rk-wf-Xi4" id="Cuk-ez-fuj"/>
                         <outlet property="guessCountLabel" destination="MGn-eN-he6" id="2uL-Ap-yKi"/>
+                        <outlet property="guessLetterButton" destination="LAB-F9-LVb" id="nvH-fc-ex5"/>
                         <outlet property="guessLetterField" destination="ccz-QM-QiE" id="EYu-V2-QrO"/>
                         <outlet property="hintLabel" destination="8qQ-h3-KuW" id="H5c-ME-rXA"/>
                         <outlet property="statusLabel" destination="JzT-hH-GbL" id="ojP-Nk-8TJ"/>
-                        <outlet property="totalWordsLabel" destination="hC3-LE-1pi" id="kqI-f5-zWO"/>
+                        <outlet property="totalWordsLabel" destination="2VN-rQ-Vof" id="Ew8-BZ-01y"/>
                         <outlet property="userGuessLabel" destination="NA3-VN-Zox" id="siL-zu-H9T"/>
                         <outlet property="wordsGuessedLabel" destination="oyd-Kb-Kjn" id="TUF-gP-iwY"/>
                         <outlet property="wordsRemainingLabel" destination="FjK-BY-o8x" id="8Po-IO-5bp"/>
@@ -175,7 +178,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="actor4" width="194" height="259"/>
+        <image name="Java" width="319" height="158"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

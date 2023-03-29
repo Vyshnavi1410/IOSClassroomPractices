@@ -17,7 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var wordsRemainingLabel: UILabel!
     
     
-    @IBOutlet weak var totalWordsLabel: UIStackView!
+    @IBOutlet weak var totalWordsLabel: UILabel!
+    @IBOutlet weak var guessLetterButton: UIButton!
     
     
     @IBOutlet weak var userGuessLabel: UILabel!
@@ -38,12 +39,33 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var displayImage: UIImageView!
     
+    
+    var words = [["JAVA", "Programming Language"],
+                 ["REVANTH", "Indian Idol Winner"],
+                 ["CAR", "Four wheeler"],
+                 ["IPHONE", "Apple device"],
+                 ["PRABHAS", "Movie Actor"]]
+    var totalWords = 5
+    var wordsGuessed = 0
+    var remainingWords = 5
+    
+    var maxNumOfWrongGuesses = 10
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        wordsGuessedLabel.text = "Total number of words guessed successfully: \(wordsGuessed)"
+        wordsRemainingLabel.text = "Total number of words remaining in game: \(remainingWords)"
+        totalWordsLabel.text = "Total number of words in game : \(totalWords)"
+        guessLetterButton.isEnabled = false
+        
     }
 
     
+
 
     @IBAction func guessLetterButtonPressed(_ sender: UIButton) {
     }
