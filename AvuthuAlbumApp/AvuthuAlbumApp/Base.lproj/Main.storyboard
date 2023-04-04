@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dw6-rE-Ya8">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Album-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RootVC" customModule="AvuthuAlbumApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="l7g-x8-SjT" userLabel="LoginSV">
+                                <rect key="frame" x="0.0" y="451" width="414" height="134"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IHJ-Ee-7bT" userLabel="UsernameTF">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="enablePassword:" destination="BYZ-38-t0r" eventType="editingChanged" id="ws4-wI-MpF"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kY2-Ud-6Xy" userLabel="PasswordTF">
+                                        <rect key="frame" x="0.0" y="42" width="414" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                        <connections>
+                                            <action selector="enableloginBTN:" destination="BYZ-38-t0r" eventType="editingChanged" id="tHN-AH-E9e"/>
+                                        </connections>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mGN-Dj-ptB" userLabel="LoginBTNSV">
+                                        <rect key="frame" x="0.0" y="84" width="414" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYS-3p-bgJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="132.5" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HP1-rk-DXO" userLabel="LoginBTN">
+                                                <rect key="frame" x="140.5" y="0.0" width="133" height="50"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                                                <connections>
+                                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GlO-Pg-wbD"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2d-cg-8y9">
+                                                <rect key="frame" x="281.5" y="0.0" width="132.5" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="l7g-x8-SjT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0in-H5-bP6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l7g-x8-SjT" secondAttribute="trailing" id="c0b-PG-oM0"/>
+                            <constraint firstItem="l7g-x8-SjT" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="imT-Rr-caW" userLabel="LoginSV.centerY = centerY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Album" prompt="Hi there! Welcome to" id="rCQ-rG-K3j"/>
+                    <connections>
+                        <outlet property="loginBTN" destination="HP1-rk-DXO" id="ZwA-Ov-yiY"/>
+                        <outlet property="passwordTF" destination="kY2-Ud-6Xy" id="BKK-mo-xNW"/>
+                        <outlet property="usernameTF" destination="IHJ-Ee-7bT" id="rLZ-v0-O8o"/>
+                        <segue destination="Ozi-fm-ve2" kind="show" identifier="showAlbum" id="kSU-ec-gJm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="81.696428571428569"/>
+        </scene>
+        <!--Album-->
+        <scene sceneID="xt2-kK-Lgh">
+            <objects>
+                <viewController id="Ozi-fm-ve2" customClass="AlbumVC" customModule="AvuthuAlbumApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ps4-7l-ALd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e4X-I3-aA9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2eY-FJ-SqX" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nZH-zB-kfg" userLabel="AlbumSV">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9d4-z2-4sv" userLabel="G1SV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="294"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Jc-hk-bmC" customClass="PhotoView" customModule="AvuthuAlbumApp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="203" height="294"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            </view>
+                                                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nlo-hl-RZV" customClass="PhotoView" customModule="AvuthuAlbumApp" customModuleProvider="target">
+                                                                <rect key="frame" x="211" y="0.0" width="203" height="294"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4KC-Eh-GNU" userLabel="G2SV">
+                                                        <rect key="frame" x="0.0" y="302" width="414" height="294"/>
+                                                        <subviews>
+                                                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BOj-AP-hRM" customClass="PhotoView" customModule="AvuthuAlbumApp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="203" height="294"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            </view>
+                                                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7p-UD-hYO" customClass="PhotoView" customModule="AvuthuAlbumApp" customModuleProvider="target">
+                                                                <rect key="frame" x="211" y="0.0" width="203" height="294"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FFc-va-j2K" userLabel="G3SV">
+                                                        <rect key="frame" x="0.0" y="604" width="414" height="294"/>
+                                                        <subviews>
+                                                            <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qg2-f0-iJT" customClass="PhotoView" customModule="AvuthuAlbumApp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="203" height="294"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            </view>
+                                                            <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pi2-xv-fxM" customClass="PhotoView" customModule="AvuthuAlbumApp" customModuleProvider="target">
+                                                                <rect key="frame" x="211" y="0.0" width="203" height="294"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="KLy-0A-xQj" userLabel="G4SV">
+                                                        <rect key="frame" x="0.0" y="906" width="414" height="294"/>
+                                                        <subviews>
+                                                            <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CdQ-mW-PWE" customClass="PhotoView" customModule="AvuthuAlbumApp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="203" height="294"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            </view>
+                                                            <view tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H1d-qL-Ise" customClass="PhotoView" customModule="AvuthuAlbumApp" customModuleProvider="target">
+                                                                <rect key="frame" x="211" y="0.0" width="203" height="294"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="nZH-zB-kfg" firstAttribute="leading" secondItem="2eY-FJ-SqX" secondAttribute="leading" id="fxL-3P-KWF"/>
+                                            <constraint firstItem="nZH-zB-kfg" firstAttribute="top" secondItem="2eY-FJ-SqX" secondAttribute="top" id="kgS-iZ-Nfy"/>
+                                            <constraint firstAttribute="height" constant="1200" id="khM-Ii-UJz"/>
+                                            <constraint firstAttribute="trailing" secondItem="nZH-zB-kfg" secondAttribute="trailing" id="m9o-1r-iPG"/>
+                                            <constraint firstAttribute="bottom" secondItem="nZH-zB-kfg" secondAttribute="bottom" id="tZg-3o-85f"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2eY-FJ-SqX" firstAttribute="leading" secondItem="e4X-I3-aA9" secondAttribute="leading" id="Z17-Uc-y5O"/>
+                                    <constraint firstAttribute="bottom" secondItem="2eY-FJ-SqX" secondAttribute="bottom" id="h5e-y8-ziB"/>
+                                    <constraint firstAttribute="trailing" secondItem="2eY-FJ-SqX" secondAttribute="trailing" id="mG2-fo-5Ax"/>
+                                    <constraint firstItem="2eY-FJ-SqX" firstAttribute="top" secondItem="e4X-I3-aA9" secondAttribute="top" id="rUr-pP-01T"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UmP-vC-CXM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e4X-I3-aA9" firstAttribute="leading" secondItem="ps4-7l-ALd" secondAttribute="leading" id="HQM-mh-8Mv"/>
+                            <constraint firstItem="2eY-FJ-SqX" firstAttribute="width" secondItem="ps4-7l-ALd" secondAttribute="width" id="JQK-kT-c3x"/>
+                            <constraint firstItem="e4X-I3-aA9" firstAttribute="top" secondItem="ps4-7l-ALd" secondAttribute="top" id="PRF-6R-8vx"/>
+                            <constraint firstAttribute="trailing" secondItem="e4X-I3-aA9" secondAttribute="trailing" id="i4C-kz-o8u"/>
+                            <constraint firstAttribute="bottom" secondItem="e4X-I3-aA9" secondAttribute="bottom" id="zi6-bQ-Skp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Album" id="cST-5v-fRf"/>
+                    <size key="freeformSize" width="414" height="1200"/>
+                    <connections>
+                        <outlet property="contentView" destination="2eY-FJ-SqX" id="x56-eg-7cY"/>
+                        <outlet property="scrollView" destination="e4X-I3-aA9" id="hPa-eQ-190"/>
+                        <outletCollection property="vehicles" destination="5Jc-hk-bmC" collectionClass="NSMutableArray" id="4kF-26-dup"/>
+                        <outletCollection property="vehicles" destination="Nlo-hl-RZV" collectionClass="NSMutableArray" id="FiQ-0Z-u00"/>
+                        <outletCollection property="vehicles" destination="BOj-AP-hRM" collectionClass="NSMutableArray" id="pUj-CP-hZg"/>
+                        <outletCollection property="vehicles" destination="e7p-UD-hYO" collectionClass="NSMutableArray" id="B6G-e8-Cty"/>
+                        <outletCollection property="vehicles" destination="Qg2-f0-iJT" collectionClass="NSMutableArray" id="2FT-nL-uPp"/>
+                        <outletCollection property="vehicles" destination="Pi2-xv-fxM" collectionClass="NSMutableArray" id="Mj6-WF-k0A"/>
+                        <outletCollection property="vehicles" destination="CdQ-mW-PWE" collectionClass="NSMutableArray" id="eGU-2v-393"/>
+                        <outletCollection property="vehicles" destination="H1d-qL-Ise" collectionClass="NSMutableArray" id="PuF-WV-7N6"/>
+                        <segue destination="Dyp-AG-B7r" kind="show" identifier="imageDeets" id="xzM-lk-9ed"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s3l-m1-7df" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1704.3478260869567" y="87.723214285714278"/>
+        </scene>
+        <!--Image description-->
+        <scene sceneID="kj2-jZ-ueK">
+            <objects>
+                <viewController id="Dyp-AG-B7r" customClass="ImageDescVC" customModule="AvuthuAlbumApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XMw-Ym-5oL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="e1r-RZ-Dlh" userLabel="ImageDescSV">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d3F-1O-SWB">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="529"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OMa-ui-ljn" userLabel="DescTV">
+                                        <rect key="frame" x="0.0" y="537" width="414" height="219"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="d3F-1O-SWB" firstAttribute="height" secondItem="e1r-RZ-Dlh" secondAttribute="height" multiplier="0.7" id="muv-Tz-kSs"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gbg-Jk-lrs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e1r-RZ-Dlh" firstAttribute="top" secondItem="Gbg-Jk-lrs" secondAttribute="top" id="Gbx-9T-8yk"/>
+                            <constraint firstItem="Gbg-Jk-lrs" firstAttribute="trailing" secondItem="e1r-RZ-Dlh" secondAttribute="trailing" id="Nt5-8n-Vqp"/>
+                            <constraint firstItem="Gbg-Jk-lrs" firstAttribute="bottom" secondItem="e1r-RZ-Dlh" secondAttribute="bottom" constant="-34" id="QLJ-YB-iP4"/>
+                            <constraint firstItem="e1r-RZ-Dlh" firstAttribute="leading" secondItem="Gbg-Jk-lrs" secondAttribute="leading" id="XOq-DF-B15"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Image description" id="rwA-lb-oIG"/>
+                    <connections>
+                        <outlet property="descTV" destination="OMa-ui-ljn" id="dg8-5P-Z3E"/>
+                        <outlet property="imageView" destination="d3F-1O-SWB" id="nmL-1u-crv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qep-I5-nnE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2682" y="96"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IgO-7E-E4o">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsOnTap="YES" id="dw6-rE-Ya8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="wbD-fA-Qb3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="amk-oQ-2fl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="33V-qm-KBv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
