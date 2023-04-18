@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Universities View Controller-->
+        <!--Domains-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="UniversitiesViewController" customModule="Kattamuri_UniversityApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -43,7 +43,7 @@
                             <constraint firstItem="bm2-dG-NZE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sKi-jz-BFg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ega-4u-o3b"/>
+                    <navigationItem key="navigationItem" title="Domains" id="ega-4u-o3b"/>
                     <connections>
                         <outlet property="universitiesTableView" destination="bm2-dG-NZE" id="xM3-aL-X82"/>
                     </connections>
@@ -52,7 +52,7 @@
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="69.642857142857139"/>
         </scene>
-        <!--University List View Controller-->
+        <!--Information Technology-->
         <scene sceneID="owi-hy-ky3">
             <objects>
                 <viewController id="Fwn-AC-aA8" customClass="UniversityListViewController" customModule="Kattamuri_UniversityApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -87,7 +87,7 @@
                             <constraint firstItem="fGb-dp-xpy" firstAttribute="trailing" secondItem="3dx-f1-zFu" secondAttribute="trailing" id="trh-U6-ILF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="0fT-e1-Nfj"/>
+                    <navigationItem key="navigationItem" title="Information Technology" id="0fT-e1-Nfj"/>
                     <connections>
                         <outlet property="universityListTableView" destination="3dx-f1-zFu" id="md4-ku-GCU"/>
                     </connections>
@@ -96,7 +96,7 @@
             </objects>
             <point key="canvasLocation" x="1783" y="70"/>
         </scene>
-        <!--University Info View Controller-->
+        <!--University ofMinnesota-->
         <scene sceneID="OIq-BR-wsx">
             <objects>
                 <viewController id="nQ6-7H-yfE" customClass="UniversityInfoViewController" customModule="Kattamuri_UniversityApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -141,7 +141,7 @@
                             <constraint firstItem="y7U-r8-fVH" firstAttribute="trailing" secondItem="Fok-WM-WtH" secondAttribute="trailing" constant="163" id="siG-FX-Gxj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="SUh-ZM-evf"/>
+                    <navigationItem key="navigationItem" title="University ofMinnesota" leftItemsSupplementBackButton="YES" id="SUh-ZM-evf"/>
                     <connections>
                         <outlet property="universityImageViewOutlet" destination="zeG-pP-vYk" id="pQY-3P-KOY"/>
                         <outlet property="universityInfoOutlet" destination="s2a-EK-rjh" id="7Q1-5S-5uO"/>
