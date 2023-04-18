@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BuX-li-SdK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Universities View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="UniversitiesViewController" customModule="Kattamuri_UniversityApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bm2-dG-NZE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="domainCell" id="CeX-KL-wZE">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CeX-KL-wZE" id="zVq-gA-cWY">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Fwn-AC-aA8" kind="show" identifier="listsSegue" id="dwV-As-RWU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bm2-dG-NZE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ne6-R5-Fww"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bm2-dG-NZE" secondAttribute="bottom" id="RAM-wM-HJ6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bm2-dG-NZE" secondAttribute="trailing" id="rAl-30-5Xn"/>
+                            <constraint firstItem="bm2-dG-NZE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sKi-jz-BFg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ega-4u-o3b"/>
+                    <connections>
+                        <outlet property="universitiesTableView" destination="bm2-dG-NZE" id="xM3-aL-X82"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939.13043478260875" y="69.642857142857139"/>
+        </scene>
+        <!--University List View Controller-->
+        <scene sceneID="owi-hy-ky3">
+            <objects>
+                <viewController id="Fwn-AC-aA8" customClass="UniversityListViewController" customModule="Kattamuri_UniversityApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YbL-1C-ixf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3dx-f1-zFu">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="listCell" id="Ksj-2r-rkC">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ksj-2r-rkC" id="RYk-PX-9VS">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nQ6-7H-yfE" kind="show" identifier="universityInfoSegue" id="T7t-O5-TSm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fGb-dp-xpy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3dx-f1-zFu" firstAttribute="leading" secondItem="fGb-dp-xpy" secondAttribute="leading" id="QOZ-fJ-bSA"/>
+                            <constraint firstItem="3dx-f1-zFu" firstAttribute="top" secondItem="fGb-dp-xpy" secondAttribute="top" id="bEm-Cf-Mxc"/>
+                            <constraint firstItem="fGb-dp-xpy" firstAttribute="bottom" secondItem="3dx-f1-zFu" secondAttribute="bottom" id="bqI-0h-ZDR"/>
+                            <constraint firstItem="fGb-dp-xpy" firstAttribute="trailing" secondItem="3dx-f1-zFu" secondAttribute="trailing" id="trh-U6-ILF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0fT-e1-Nfj"/>
+                    <connections>
+                        <outlet property="universityListTableView" destination="3dx-f1-zFu" id="md4-ku-GCU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="atx-mn-QfS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1783" y="70"/>
+        </scene>
+        <!--University Info View Controller-->
+        <scene sceneID="OIq-BR-wsx">
+            <objects>
+                <viewController id="nQ6-7H-yfE" customClass="UniversityInfoViewController" customModule="Kattamuri_UniversityApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zeG-pP-vYk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7rW-6Y-7Et">
+                                <rect key="frame" x="87" y="129" width="240" height="106"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fok-WM-WtH">
+                                <rect key="frame" x="174" y="333" width="77" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="showInfoAction:" destination="nQ6-7H-yfE" eventType="touchUpInside" id="NNu-q7-Npn"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="s2a-EK-rjh">
+                                <rect key="frame" x="87" y="408" width="240" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="OWL-YZ-Yur"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="y7U-r8-fVH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="s2a-EK-rjh" firstAttribute="centerX" secondItem="zeG-pP-vYk" secondAttribute="centerX" id="2z0-y1-Q27"/>
+                            <constraint firstItem="s2a-EK-rjh" firstAttribute="leading" secondItem="7rW-6Y-7Et" secondAttribute="leading" id="7s8-fC-40b"/>
+                            <constraint firstItem="Fok-WM-WtH" firstAttribute="top" secondItem="7rW-6Y-7Et" secondAttribute="bottom" constant="76" id="IaP-a0-FvC"/>
+                            <constraint firstItem="Fok-WM-WtH" firstAttribute="leading" secondItem="y7U-r8-fVH" secondAttribute="leading" constant="174" id="JC1-8G-1Qe"/>
+                            <constraint firstItem="s2a-EK-rjh" firstAttribute="trailing" secondItem="7rW-6Y-7Et" secondAttribute="trailing" id="P8v-6X-fdP"/>
+                            <constraint firstItem="7rW-6Y-7Et" firstAttribute="top" secondItem="y7U-r8-fVH" secondAttribute="top" constant="41" id="UFv-Mx-y0Y"/>
+                            <constraint firstItem="y7U-r8-fVH" firstAttribute="bottom" secondItem="s2a-EK-rjh" secondAttribute="bottom" constant="304" id="dxV-Km-6ji"/>
+                            <constraint firstItem="s2a-EK-rjh" firstAttribute="top" secondItem="Fok-WM-WtH" secondAttribute="bottom" constant="66" id="hc6-bM-Zq7"/>
+                            <constraint firstItem="s2a-EK-rjh" firstAttribute="leading" secondItem="y7U-r8-fVH" secondAttribute="leading" constant="87" id="k0C-Zc-0yH"/>
+                            <constraint firstItem="y7U-r8-fVH" firstAttribute="trailing" secondItem="Fok-WM-WtH" secondAttribute="trailing" constant="163" id="siG-FX-Gxj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SUh-ZM-evf"/>
+                    <connections>
+                        <outlet property="universityImageViewOutlet" destination="zeG-pP-vYk" id="pQY-3P-KOY"/>
+                        <outlet property="universityInfoOutlet" destination="s2a-EK-rjh" id="7Q1-5S-5uO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sMq-TW-BNB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2643" y="69"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Qee-7Y-w0k">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BuX-li-SdK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xQW-fw-BDR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="APO-K7-F2x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PGE-Bg-3Te" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
