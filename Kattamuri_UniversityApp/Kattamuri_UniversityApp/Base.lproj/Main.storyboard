@@ -96,7 +96,7 @@
             </objects>
             <point key="canvasLocation" x="1783" y="70"/>
         </scene>
-        <!--University ofMinnesota-->
+        <!--University of Minnesota-->
         <scene sceneID="OIq-BR-wsx">
             <objects>
                 <viewController id="nQ6-7H-yfE" customClass="UniversityInfoViewController" customModule="Kattamuri_UniversityApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -107,7 +107,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7rW-6Y-7Et">
                                 <rect key="frame" x="87" y="129" width="240" height="106"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fok-WM-WtH">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fok-WM-WtH">
                                 <rect key="frame" x="174" y="333" width="77" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
@@ -131,17 +131,17 @@
                         <constraints>
                             <constraint firstItem="s2a-EK-rjh" firstAttribute="centerX" secondItem="zeG-pP-vYk" secondAttribute="centerX" id="2z0-y1-Q27"/>
                             <constraint firstItem="s2a-EK-rjh" firstAttribute="leading" secondItem="7rW-6Y-7Et" secondAttribute="leading" id="7s8-fC-40b"/>
-                            <constraint firstItem="Fok-WM-WtH" firstAttribute="top" secondItem="7rW-6Y-7Et" secondAttribute="bottom" constant="76" id="IaP-a0-FvC"/>
+                            <constraint firstItem="Fok-WM-WtH" firstAttribute="top" secondItem="7rW-6Y-7Et" secondAttribute="bottom" constant="98" id="IaP-a0-FvC"/>
                             <constraint firstItem="Fok-WM-WtH" firstAttribute="leading" secondItem="y7U-r8-fVH" secondAttribute="leading" constant="174" id="JC1-8G-1Qe"/>
                             <constraint firstItem="s2a-EK-rjh" firstAttribute="trailing" secondItem="7rW-6Y-7Et" secondAttribute="trailing" id="P8v-6X-fdP"/>
                             <constraint firstItem="7rW-6Y-7Et" firstAttribute="top" secondItem="y7U-r8-fVH" secondAttribute="top" constant="41" id="UFv-Mx-y0Y"/>
                             <constraint firstItem="y7U-r8-fVH" firstAttribute="bottom" secondItem="s2a-EK-rjh" secondAttribute="bottom" constant="304" id="dxV-Km-6ji"/>
-                            <constraint firstItem="s2a-EK-rjh" firstAttribute="top" secondItem="Fok-WM-WtH" secondAttribute="bottom" constant="66" id="hc6-bM-Zq7"/>
+                            <constraint firstItem="s2a-EK-rjh" firstAttribute="top" secondItem="Fok-WM-WtH" secondAttribute="bottom" constant="44" id="hc6-bM-Zq7"/>
                             <constraint firstItem="s2a-EK-rjh" firstAttribute="leading" secondItem="y7U-r8-fVH" secondAttribute="leading" constant="87" id="k0C-Zc-0yH"/>
                             <constraint firstItem="y7U-r8-fVH" firstAttribute="trailing" secondItem="Fok-WM-WtH" secondAttribute="trailing" constant="163" id="siG-FX-Gxj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="University ofMinnesota" leftItemsSupplementBackButton="YES" id="SUh-ZM-evf"/>
+                    <navigationItem key="navigationItem" title="University of Minnesota" leftItemsSupplementBackButton="YES" id="SUh-ZM-evf"/>
                     <connections>
                         <outlet property="universityImageViewOutlet" destination="zeG-pP-vYk" id="pQY-3P-KOY"/>
                         <outlet property="universityInfoOutlet" destination="s2a-EK-rjh" id="7Q1-5S-5uO"/>
