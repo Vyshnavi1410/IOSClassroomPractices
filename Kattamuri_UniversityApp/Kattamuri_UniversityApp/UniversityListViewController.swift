@@ -7,13 +7,29 @@
 
 import UIKit
 
-class UniversityListViewController: UIViewController {
+
+var universityObj = Universities()
+
+class UniversityListViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        var count = domain1.list_Array.count
+        return count
+    }
     
-    @IBOutlet weak var universityListTableView: UITableViewCell!
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var listCell = universityListTableView.dequeueReusableCell(withIdentifier: "listCell", for: indexPath)
+        
+        listCell.textLabel?.text =
+    }
+    
+    
+    @IBOutlet weak var universityListTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        universityListTableView.delegate = self
+        universityListTableView.dataSource = self
         // Do any additional setup after loading the view.
     }
     
